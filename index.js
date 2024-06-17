@@ -27,7 +27,7 @@ app.post("/webhook", async (req, res) => {
             service: 'gmail',
             auth: {
               user: 'mkashan2585@gmail.com',
-              pass: 'tezkkcusndyodjsr'
+              pass: process.env.PASS
             }
           });
         agent.add("Email send successfully....")
